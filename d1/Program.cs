@@ -45,7 +45,21 @@
             }
 
             //Return the highest value
-            Console.WriteLine(calorieCount.Max());
+            Console.WriteLine("Highest value: " + calorieCount.Max());
+
+            //Puzzle 2 code:
+
+            Console.WriteLine();
+            List<int> tempCalorieCount = calorieCount.GetRange(0, calorieCount.Count);
+            int totalCalories = 0;
+
+            for (int i = 0; i < 3; i++)
+            {
+                totalCalories += calorieCount.Max();
+                calorieCount.Remove(calorieCount.Max());
+            }
+            Console.WriteLine("Total of top 3 elves: " + totalCalories);
+
         }
     }
 }
