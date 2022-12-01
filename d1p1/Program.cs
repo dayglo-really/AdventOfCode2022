@@ -1,4 +1,4 @@
-﻿namespace d1p1
+﻿namespace d1
 {
     internal class Program
     {
